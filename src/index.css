@@ -4,7 +4,7 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: lightblue;
   --secondary: #f3a847;
   --tertiary: #b12704;
   --light: #fafafa;
@@ -32,8 +32,8 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--dark);
-  color: var(--light);
+  background: #b7d9b1;
+  color: #fdf4e3;
   font-family: 'Poiret One', cursive;
 }
 
@@ -146,6 +146,7 @@ input:focus {
 li {
   list-style: none;
 }
+
 
 nav a:hover {
   text-decoration: none;
@@ -286,6 +287,21 @@ a {
   margin-right: -2px;
 }
 
+
 .navActive {
   color: var(--secondary);
+  font-size: 125%;
 }
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #9ea0a1;
+  color: #fdf4e3;
+  
+}
+

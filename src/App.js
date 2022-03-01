@@ -36,6 +36,10 @@ function App() {
           <ContactForm></ContactForm>
         )}
       </main>
+      <footer class="footer">
+        <p>Completed as part of the University of California Berkeley Full Stack Web Development Bootcamp</p>
+        
+      </footer>
     </div>
   );
 }
