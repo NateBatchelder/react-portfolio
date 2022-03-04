@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
+import PastWork from "./components/PastWork";
+
+
+// import Resume from "./components/Resume";
 
 function App() {
   const [categories] = useState([
     {
       name: "Portfolio",
       description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+        "A collection of my projects.  I have worked on a variety of projects, from simple websites to full-stack applications.",
     },
     {
       name: "Resume",
@@ -33,10 +37,11 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
+            <PastWork></PastWork>
             <About></About>
           </>
         ) : (
-          <ContactForm></ContactForm>
+              <ContactForm></ContactForm>            
         )}
       </main>
       <footer class="footer">
@@ -44,9 +49,16 @@ function App() {
           Completed as part of the University of California Berkeley Full Stack
           Web Development Bootcamp
         </p>
-        <a href="https://github.com/natebatchelder">GitHub</a>
-
-        <a href="https://www.linkedin.com/in/natebatchelder/">LinkedIn</a>
+        <h3>
+        <p>
+          You can find my current and past over on
+          <a href="https://github.com/natebatchelder"> GitHub</a>
+        </p>
+        <p>
+          And if you'd like to connect professionaly, you will find resources on
+          <a href="https://www.linkedin.com/in/natebatchelder/"> LinkedIn</a>
+        </p>
+        </h3>
       </footer>
     </div>
   );
