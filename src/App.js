@@ -10,8 +10,11 @@ function App() {
       description:
         "Photos of grocery stores, food trucks, and other commercial projects",
     },
-    { name: "Resume", description: "A highlighted look at some of my past academic and relevant work experiences" },
-  
+    {
+      name: "Resume",
+      description:
+        "A highlighted look at some of my past academic and relevant work experiences",
+    },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -37,8 +40,13 @@ function App() {
         )}
       </main>
       <footer class="footer">
-        <p>Completed as part of the University of California Berkeley Full Stack Web Development Bootcamp</p>
-        
+        <p>
+          Completed as part of the University of California Berkeley Full Stack
+          Web Development Bootcamp
+        </p>
+        <a href="https://github.com/natebatchelder">GitHub</a>
+
+        <a href="https://www.linkedin.com/in/natebatchelder/">LinkedIn</a>
       </footer>
     </div>
   );

@@ -8,7 +8,7 @@ main {
   --secondary: #f3a847;
   --tertiary: #b12704;
   --light: #fafafa;
-  --dark: #000000;
+  --dark: lightblue;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -34,7 +34,7 @@ body {
   letter-spacing: 0.1em;
   background: #b7d9b1;
   color: #fdf4e3;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 h1,
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -94,7 +94,9 @@ header {
 
 header a {
   color: var(--light);
+  padding-left: 1rem;
 }
+ 
 
 button {
   font-size: 1rem;
@@ -300,8 +302,13 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #9ea0a1;
+  background-color: lightblue;
   color: #fdf4e3;
+  text-align: center;
   
+}
+
+.footer a {
+  color: #fdf4e3;
 }
 

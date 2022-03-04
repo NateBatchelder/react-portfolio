@@ -1,15 +1,46 @@
 import React from 'react';
 import PastWork from '../PastWork';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Gallery(props) {
-  const { currentCategory } = props;
+function Portfolio() {
+  const pastwork = [
+    {
+      title: "Password Generator",
+      image: " ",
+      description: " ",
+      deployment: "https://natebatchelder.github.io/passwordGenerator/",
+    },
+    {
+      title: "Note-Taker",
+      image: " ",
+      description: " ",
+      deployment: " ",
+    },
+    {
+      title: "Note-Taker",
+      image: " ",
+      description: " ",
+      deployment: " ",
+    },
+    {
+      title: "Note-Taker",
+      image: " ",
+      description: " ",
+      deployment: " ",
+    },
+    {
+      title: "Note-Taker",
+      image: " ",
+      description: " ",
+      deployment: " ",
+    },
+  ];
+
   return (
-    <section>
-      <h1 data-testid="h1tag">{capitalizeFirstLetter(currentCategory.name)}</h1>
-      <p>{currentCategory.description}</p>
-      <PastWork category={currentCategory.name} />
-    </section>
+    <div>
+      <PastWork projects={pastwork} />
+    </div>
   );
 }
-export default Gallery;
+
+
+export default Portfolio;
