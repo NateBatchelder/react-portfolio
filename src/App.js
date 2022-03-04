@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
-import PastWork from "./components/PastWork";
+import Portfolio from "./components/Portfolio";
 
 
 // import Resume from "./components/Resume";
@@ -37,7 +37,7 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
-            <PastWork></PastWork>
+            <Portfolio></Portfolio>
             <About></About>
           </>
         ) : (
