@@ -9,43 +9,35 @@ import Footer from "./components/Footer";
 // import Resume from "./components/Resume";
 
 function App() {
-  const [categories] = useState([
-    {
-      name: "Portfolio",
-      description:
-        "A collection of my projects.  I have worked on a variety of projects, from simple websites to full-stack applications.",
-    },
-    {
-      name: "Resume",
-      description:
-        "A highlighted look at some of my past academic and relevant work experiences",
-    },
-  ]);
+  const [currentCategory, setCurrentCategory] = useState("about");
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
-  const [contactSelected, setContactSelected] = useState(false);
+  const sectionSelection = () => {
+    switch (currentCategory) {
+      case "about":
+        return <About />;
+      case "contact":
+        return <ContactForm />;
+      case "portfolio":
+        return <Portfolio />;
+      case "resume":
+        return <Resume />;
+      default:
+        return null;
+    }
+  };
 
   return (
     <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-            <Portfolio></Portfolio>
-            <About></About>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-      </main>
-      <Footer></Footer>
+      <div>
+        <header
+          currentCategory={currentCategory}
+          setCurrentCategory={setCurrentCategory}
+        ></header>
+      </div>
+      <div>{sectionSelection()}</div>
+      <div>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }
