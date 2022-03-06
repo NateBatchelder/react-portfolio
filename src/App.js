@@ -3,7 +3,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
 import Portfolio from "./components/Portfolio";
-
+import Resume from "./components/Resume";
 
 // import Resume from "./components/Resume";
 
@@ -41,7 +41,7 @@ function App() {
             <About></About>
           </>
         ) : (
-              <ContactForm></ContactForm>            
+          <ContactForm></ContactForm>
         )}
       </main>
       <footer class="footer">
@@ -50,14 +50,15 @@ function App() {
           Web Development Bootcamp
         </p>
         <h3>
-        <p>
-          You can find my current and past over on
-          <a href="https://github.com/natebatchelder"> GitHub</a>
-        </p>
-        <p>
-          And if you'd like to connect professionaly, you will find resources on
-          <a href="https://www.linkedin.com/in/natebatchelder/"> LinkedIn</a>
-        </p>
+          <p>
+            You can find my current and past over on
+            <a href="https://github.com/natebatchelder"> GitHub</a>
+          </p>
+          <p>
+            And if you'd like to connect professionaly, you will find resources
+            on
+            <a href="https://www.linkedin.com/in/natebatchelder/"> LinkedIn</a>
+          </p>
         </h3>
       </footer>
     </div>
