@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Nav from "./components/Nav";
+import './App.css';
 import About from "./components/About";
+import Header from "./components/Header";
 import ContactForm from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
@@ -29,10 +30,10 @@ function App() {
   return (
     <div>
       <div>
-        <header
+        <Header
           currentCategory={currentCategory}
           setCurrentCategory={setCurrentCategory}
-        ></header>
+        ></Header>
       </div>
       <div>{sectionSelection()}</div>
       <div>

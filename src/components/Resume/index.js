@@ -1,18 +1,25 @@
 import React from "react";
 
-export default function Resume() {
+function Resume() {
   return (
-    <div className="section row my-1 mx-4">
-      <span className="gutter col-sm-12 col-md-3"></span>
-      <div className="section-cta card mt-1 col-sm-12 col-md-10">
-        <div className="resume card-panel pt-1">
-          <a
-            href={require("../../assets/resume.pdf")}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </a>
+    <body>
+      <section>
+        <article>
+          <div className="row my-1 mx-3">
+            <div className="col-md-12">
+              <h1>
+                <a
+                  href={require("../../assets/resume.pdf")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  You can download my resume here
+                </a>
+              </h1>
+            </div>
+          </div>
+        </article>
+        <article>
           <p>
             I'm currently completing an Full Stack Web Development Bootcamp at
             the University of California, Berkeley.
@@ -27,13 +34,16 @@ export default function Resume() {
             proven difficult in the absense of the internet and digital
             technology.
           </p>
-          <iframe
-            title="resume"
-            src={require("../../assets/resume.pdf")}
-            style={{ width: "90%", height: "75%" }}
-          ></iframe>
-        </div>
-      </div>
-    </div>
+        </article>
+
+        <iframe
+          title="resume"
+          src={require("../../assets/resume.pdf")}
+          style={{ width: "10", height: "10" }}
+        ></iframe>
+      </section>
+    </body>
   );
 }
+
+export default Resume;

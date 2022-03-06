@@ -1,19 +1,26 @@
 import React from "react";
-import Nav from "./Nav";
 
-function Header (props) {
-  const { currentCategory, setCurrentCategory } = props;
-  
-  return (
-    <header className="flex-row px-1" id="navbar">
-      <div className="nav">
-        <Nav
-          currentCategory={currentCategory}
-          setCurrentCategory={setCurrentCategory}
-        ></Nav>
-      </div>
-    </header>
-  );
+function Nav(props) {
+    const { currentCategory, setCurrentCategory } = props;
+
+    return (
+        <nav>
+            <ul className="flex-row">
+                <li className={currentCategory === "about" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentCategory("about")}>About</span>
+                </li>
+                <li className={currentCategory === "portfolio" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentCategory("portfolio")}>Portfolio</span>
+                </li>
+                <li className={currentCategory === "resume" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentCategory("resume")}>Resume</span>
+                </li>
+                <li className={currentCategory === "contact" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentCategory("contact")}>Contact</span>
+                </li>
+            </ul>
+        </nav>
+    );
 }
 
-export default Header;
+export default Nav;
