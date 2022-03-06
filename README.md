@@ -1,7 +1,9 @@
-# React-Portfolio
+# React Portfolio
 
 ## Description
-This is a model online portfolio for a full stack developer using my own personal experiences as content for the website.
+This is a model online portfolio for a full stack developer using my own personal experiences as content for the website.  It was created following the instruction of the University of California, Berkeley Full Stack Web Development Bootcamp.
+
+Module 20 - React Challenge: React Portfolio
 
 User Story
 
