@@ -16,9 +16,7 @@ function Footer() {
             <p>
               And if you'd like to connect professionaly, you will find
               resources on
-              <a href="https://www.linkedin.com/in/natebatchelder/">
-                {" "}
-                LinkedIn
+              <a href="https://www.linkedin.com/in/natebatchelder/"> LinkedIn
               </a>
             </p>
           </h3>
